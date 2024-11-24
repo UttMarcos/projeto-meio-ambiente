@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatar Problema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contribua Para o Meio Ambiente</h1>
+        <p>No seu bairro existe algum lugar com lixo concentrado? Informe aqui!</p>
+    </header>
+    <main>
+        <section id="contato-lixo">
+            <div class="titulo-contato">
+                <h2>Contatos para Coleta de Lixo</h2>
+            </div>
+            
+            <ul>
+                <li><strong>(11) 3202-1312</strong> - Coleta de lixo Seletiva</li>
+                <li><strong>(11) 5898-5600</strong> - Policia Militar (Ambiental)</li>
+                <li><strong>(11) 2468-7206</strong> - Ecoponto Torres Tibagy</li>
+            </ul>
+            <div class="site-link">
+                <span>Site:</span> 
+                <a href="https://www.guarulhos.sp.gov.br" target="_blank">www.guarulhos.sp.gov.br</a>
+            </div>
+        </section>
+
+        <form id="addressForm">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" maxlength="8" required>
+            
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Rua/Avenida" readonly>
+            
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" readonly>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" readonly>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" placeholder="Estado" readonly>
+            
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Número" required>
+            
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+            
+            <label for="descricao">Descrição do Problema:</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva o problema ou sugestão" required></textarea>
+            
+            <button type="submit">Enviar Relato</button>
+        </form>
+
+        <section id="relatos">
+            <h2>Relatos Enviados</h2>
+            <ul id="reportsList">
+                <!-- Relatos serão listados aqui -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido como projeto de extensão.</p>
+        <a href="index.html" class="btn-avancar">Voltar para o início</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

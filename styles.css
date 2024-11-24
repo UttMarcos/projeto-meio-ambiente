@@ -1,0 +1,186 @@
+/* Estilos Gerais */
+body {
+    background-image: url('imagens/fundo3.png');
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+header {
+    background-color: #4caf50; /* Verde vibrante */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 5px solid #388e3c; /* Sutil destaque */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Seções */
+main {
+    padding: 1rem;
+}
+
+h2 {
+    color: #388e3c;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: row; /* Mantém o texto à esquerda e as imagens à direita */
+    align-items: center;
+    gap: 120px; /* Espaçamento entre as imagens e o conteúdo */
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c8e6c9; /* Verde claro */
+}
+
+/* Estilo específico para a seção "Como reciclar, reduzir e separar os materiais" */
+section#info:first-of-type {
+    display: flex;
+    flex-direction: row; /* Mantém o texto à esquerda e a imagem à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: left; /* Coloca a imagem à direita do conteúdo */
+    margin-bottom: 2rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c8e6c9; /* Verde claro */
+}
+
+section#info:first-of-type img.reciclacima {
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 150px;
+    margin-left: 50px; /* Ajuste o espaçamento entre a imagem e o conteúdo */
+}   
+
+/* Imagens dentro das seções */
+section img {
+    width: 150px; /* Tamanho das imagens */
+    height: 150px;
+    margin-left: 20px; /* Distância à esquerda */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+input, textarea, button {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #9ccc65;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #388e3c;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Lista de relatórios */
+ul#reportsList li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    background-color: #e8f5e9; /* Fundo verde claro */
+}
+
+ul#reportsList li strong {
+    color: #388e3c;
+}
+
+ul#reportsList li small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6d9b76; /* Verde mais claro */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #388e3c; /* Verde escuro */
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.btn-avancar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f4b400; /* Cor amarela */
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-avancar:hover {
+    background-color: #e3a900; /* Tom mais escuro ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        flex-direction: column; /* Em telas menores, coloca o conteúdo em coluna */
+        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    }
+
+    section img {
+        margin-left: 0; /* Remove a margem à esquerda */
+        margin-top: 10px; /* Adiciona margem superior para separar da lista */
+    }
+}
